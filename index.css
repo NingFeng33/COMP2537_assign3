@@ -1,8 +1,3 @@
-label {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 #pokeCards {
   display: flex;
   flex-wrap: wrap;
@@ -25,4 +20,9 @@ label {
 .modal img {
   width: 100%;
   height: 100%;
+}
+
+.form-check {
+  display: inline-block; 
+  margin-right: 10px; 
 }
