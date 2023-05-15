@@ -49,6 +49,14 @@ const updatePaginationDiv = (currentPage, numPages) => {
       <button class="btn btn-primary page ml-1 numberedButtons" value="${numPages}">End</button>
     `);
   }
+
+  //add goto  first page button
+  if (currentPage > 3) {
+    $("#pagination").append(`
+      <button class="btn btn-primary page ml-1 numberedButtons" value="1">First</button>
+    `);
+  }
+
 };
 
 const paginate = async (currentPage, PAGE_SIZE, pokemons) => {
